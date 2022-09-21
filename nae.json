@@ -71,36 +71,6 @@
                 "path": ""
             },
             "children": {
-                "cases": {
-                    "layout": {
-                        "name": "caseView",
-                        "params": {},
-                        "enableCaseTitle": true,
-                        "isCaseTitleRequired": true
-                    },
-                    "access": "private",
-                    "navigation": {
-                        "icon": "fact_check",
-                        "title": "All Cases"
-                    },
-                    "routing": {
-                        "path": "cases"
-                    }
-                },
-                "tasks": {
-                    "layout": {
-                        "name": "taskView",
-                        "params": {}
-                    },
-                    "access": "private",
-                    "navigation": {
-                        "icon": "assignment",
-                        "title": "All Tasks"
-                    },
-                    "routing": {
-                        "path": "tasks"
-                    }
-                },
                 "tabViewAllCase": {
                     "layout": {
                         "name": "tabView",
@@ -112,19 +82,8 @@
                                         "name": "caseView"
                                     },
                                     "label": {
-                                        "icon": "storage",
-                                        "text": "All Cases"
-                                    },
-                                    "canBeClosed": false,
-                                    "order": -2
-                                },
-                                {
-                                    "view": {
-                                        "name": "caseView"
-                                    },
-                                    "label": {
-                                        "icon": "face",
-                                        "text": "My Cases"
+                                        "icon": "description",
+                                        "text": "HTMLtoPDF"
                                     },
                                     "canBeClosed": false,
                                     "order": -1
@@ -139,22 +98,11 @@
                     },
                     "access": "private",
                     "navigation": {
-                        "icon": "tab",
-                        "title": "Tab View"
+                        "icon": "grid_view",
+                        "title": "My apps"
                     },
                     "routing": {
                         "path": "tabView"
-                    }
-                },
-                "emptyView": {
-                    "layout": {
-                        "name": "emptyView",
-                        "componentName": "EmptyView"
-                    },
-                    "access": "private",
-                    "navigation": true,
-                    "routing": {
-                        "path": "empty"
                     }
                 },
                 "workflows": {

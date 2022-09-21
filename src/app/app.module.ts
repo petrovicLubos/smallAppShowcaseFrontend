@@ -28,33 +28,18 @@ import {TemplateFrontendConfigurationService} from './template-frontend-configur
 import {TemplateFrontendViewService} from './template-frontend-view.service';
 import {LoginComponent} from './views/login/login.component';
 import {SidenavComponent} from './views/side-nav/sidenav.component';
-import {SideNavCasesCaseViewComponent} from './views/side-nav/cases/side-nav-cases-case-view.component';
-import {SideNavTasksTaskViewComponent} from './views/side-nav/tasks/side-nav-tasks-task-view.component';
-import {EmptyViewComponent} from './views/side-nav/emptyView/empty-view.component';
-import {
-    SideNavTabviewallcaseContent0TaskViewComponent
-} from './views/side-nav/tabViewAllCase/content/0/side-nav-tabviewallcase-content0-task-view.component';
-import {
-    SideNavTabviewallcaseContent1CaseViewComponent
-} from './views/side-nav/tabViewAllCase/content/1/side-nav-tabviewallcase-content1-case-view.component';
-import {
-    SideNavTabviewallcaseContent2CaseViewComponent
-} from './views/side-nav/tabViewAllCase/content/2/side-nav-tabviewallcase-content2-case-view.component';
-import {TabViewAllCaseComponent} from './views/side-nav/tabViewAllCase/tab-view-all-case.component';
-
+import { SideNavTabviewallcaseContent0TaskViewComponent } from './views/side-nav/tabViewAllCase/content/0/side-nav-tabviewallcase-content0-task-view.component';
+import { SideNavTabviewallcaseContent1CaseViewComponent } from './views/side-nav/tabViewAllCase/content/1/side-nav-tabviewallcase-content1-case-view.component';
+import { TabViewAllCaseComponent } from './views/side-nav/tabViewAllCase/tab-view-all-case.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         LoginComponent,
         SidenavComponent,
-        SideNavCasesCaseViewComponent,
-        SideNavTasksTaskViewComponent,
-        EmptyViewComponent,
         SideNavTabviewallcaseContent0TaskViewComponent,
         SideNavTabviewallcaseContent1CaseViewComponent,
-        SideNavTabviewallcaseContent2CaseViewComponent,
-        TabViewAllCaseComponent,
+        TabViewAllCaseComponent
     ],
     imports: [
         BrowserModule,
@@ -83,10 +68,7 @@ import {TabViewAllCaseComponent} from './views/side-nav/tabViewAllCase/tab-view-
         {provide: ViewService, useClass: TemplateFrontendViewService}
     ],
     bootstrap: [AppComponent],
-    entryComponents: [NewCaseComponent, LoginComponent, SidenavComponent, SideNavCasesCaseViewComponent,
-        SideNavTasksTaskViewComponent, EmptyViewComponent, SideNavTabviewallcaseContent0TaskViewComponent,
-        SideNavTabviewallcaseContent1CaseViewComponent, SideNavTabviewallcaseContent2CaseViewComponent,
-        TabViewAllCaseComponent, WorkflowViewComponent, ImportNetComponent, RoleAssignmentComponent]
+    entryComponents: [NewCaseComponent, LoginComponent, SidenavComponent, WorkflowViewComponent, ImportNetComponent, RoleAssignmentComponent]
 })
 export class AppModule {
 }

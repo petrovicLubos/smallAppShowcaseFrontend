@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
     }
 
     private redirectToCases() {
-        this.router.navigate(['cases']).then((value) => {
+        this.router.navigate(['tabView']).then((value) => {
             console.log('Routed to ' + value);
         });
     }
